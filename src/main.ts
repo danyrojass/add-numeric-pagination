@@ -23,3 +23,12 @@ document.getElementById('submitButton')!.addEventListener('click', async () => {
         reader.readAsArrayBuffer(pdfFile);
     }
 });
+document.getElementById('resetButton')!.addEventListener('click', () => {
+    const fileInput = document.getElementById('pdfInput') as HTMLInputElement;
+    const startNumberInput = document.getElementById('startNumber') as HTMLInputElement;
+    const downloadLink = document.getElementById('downloadLink') as HTMLAnchorElement;
+
+    fileInput.value = '';
+    startNumberInput.value = '1';
+    downloadLink.style.display = 'none';
+});

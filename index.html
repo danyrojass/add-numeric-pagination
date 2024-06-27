@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Numeración a PDF</title>
-    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
-<div class="container">
+<header>
     <h1>Agregar Numeración a PDF</h1>
-    <input type="file" accept="application/pdf" id="pdfInput" />
-    <input type="number" id="startNumber" value="1" placeholder="Número de inicio" />
+</header>
+<div class="container">
+    <input type="file" accept="application/pdf" id="pdfInput"/>
+    <input type="number" id="startNumber" value="1" placeholder="Número de inicio"/>
     <button id="submitButton">Agregar Numeración</button>
+    <button class="reset" id="resetButton">Resetear</button>
     <a id="downloadLink" style="display: none;">Descargar PDF con Numeración</a>
 </div>
+<footer>
+    <p>2024 por Daniel Rojas (<a href="https://portfolio-rojas-daniel.vercel.app/" target="_blank">danyrs_</a>)
+    </p>
+</footer>
 <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
