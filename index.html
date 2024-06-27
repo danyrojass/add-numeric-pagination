@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Numeración a PDF</title>
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Agregar Numeración a PDF</h1>
+    <input type="file" accept="application/pdf" id="pdfInput" />
+    <input type="number" id="startNumber" value="1" placeholder="Número de inicio" />
+    <button id="submitButton">Agregar Numeración</button>
+    <a id="downloadLink" style="display: none;">Descargar PDF con Numeración</a>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
